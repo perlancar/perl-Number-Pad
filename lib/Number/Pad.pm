@@ -174,6 +174,24 @@ C<$truncate> is boolean. When set to 1, then text will be truncated when it is
 longer than C<$width>.
 
 
+=head1 FAQ
+
+=head2 Why?
+
+Aligning floats of different number of decimal points to the decimal point is
+arguable more readable than simply right-aligning. Compare:
+
+      1.23
+       4.8
+  635.2711
+
+versus:
+
+    1.23
+    4.8
+  635.2711
+
+
 =head1 SEE ALSO
 
 L<String::Pad> has the same interface, but does not have the
